@@ -10,7 +10,9 @@ int main() {
 
 	while(1) {
 		if (xbee.readable()){
-			nrf.putc(pc.putc(xbee.getc()));
+			int ch = xbee.getc();
+			pc.putc(ch);
+			nrf.putc(ch);
 			myled = !myled;
 		}
     }
