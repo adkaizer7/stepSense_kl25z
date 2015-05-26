@@ -235,7 +235,7 @@ int main(void)
         }
     }
 }
-
+#if 0
 int main1()
 {
     led1 = 1;
@@ -245,3 +245,4 @@ int main1()
     }
     return 0;
 }
+#endif
